@@ -1,0 +1,24 @@
+---
+title: "quote2video: Create Videos from Quotes"
+author: "Your Name"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{quote2video Guide}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+## Introduction
+
+The `quote2video` package allows you to create videos from quotes stored in a CSV file for different projects. Follow these steps:
+
+1. Use `draft("project_name")` to set up a new project directory with subdirectories and a draft `quotes.csv`.
+2. Modify the `quotes.csv` file inside the project directory with your quotes and authors.
+3. Use `build2video("project_name")` to compile the video, saving the result in the project directory.
+
+## Setup
+
+```r
+library(quote2video)
+draft("elon")  # Creates an 'elon' directory with setup
