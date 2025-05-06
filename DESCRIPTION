@@ -1,17 +1,19 @@
 Package: quote2video
 Type: Package
-Title: What the Package Does (Title Case)
+Title: Create Videos from Quotes
 Version: 0.1.0
-Authors@R: c(
-    person(
-      "Jane", "Doe",
-      email = "jane@example.com",
-      role = c("aut", "cre")
-    )
-  )
-Description: More about what it does (maybe more than one line).
-    Continuation lines should be indented.
-License: What license is it under?
+Authors@R: Bishwash Maharjan
+Description: A package to create videos from quotes by generating images, voice-overs, and combining them into a final video
+License: MIT
+Imports:
+    readr,
+    dplyr,
+    purrr,
+    reticulate,
+    jpeg
+Suggests:
+    devtools
+    SystemRequirements: FFmpeg, Python (>= 3.6) with gTTS
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.3.2
